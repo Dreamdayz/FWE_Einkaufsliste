@@ -1,0 +1,17 @@
+<div class="grocerylist">
+  <div class="listheader">
+    <button routerLink="/product/new">Add Product</button>
+    <div>Total bought Products: {{countBoughtProducts()}}/{{products.length}}</div>
+    <button  [disabled]="!products.length" (click)="exportCsv()">CSV-Export</button>
+  </div>
+  <ul *ngIf="products.length>0">
+    <li *ngFor="let product of products" [routerLink]="product._id">
+      <div class="product">{{product.name}} ({{product.amount}} {{product.type}})</div>
+      <div class="productstatus" *ngIf="product.bought">gekauft</div>
+      <div class="productstatus" *ngIf="!product.bought">Nicht gekauft</div>
+      <div class="productdescription" *ngIf="product.description">{{product.description}}</div>
+    </li>
+  </ul>
+
+  <div *ngIf=" products.length==0">No data yet...mid</div>
+</div>

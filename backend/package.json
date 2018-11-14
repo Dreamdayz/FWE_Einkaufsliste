@@ -1,0 +1,27 @@
+{
+  "name": "fwe-ws18-19-747312-ha1",
+  "version": "1.2.3",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha ./test/test.js",
+    "start": "node server.js"
+  },
+  "author": "kenji",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "json2csv": "^4.3.0",
+    "mongoose": "^5.3.12",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  }
+}

@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="column">
+    <div class="groceryinfo">
+      <h2 *ngIf="mode === 'new'" class="center">Create Product</h2>
+      <h2 *ngIf="mode === 'edit'" class="center">Edit Product</h2>
+
+      <form *ngIf="product" id="usrform">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Tomaten" [(ngModel)]="product.name">
+        <label for="amount">Amount:</label>
+        <input type="text" name="amount" id="amount" placeholder="3" [(ngModel)]="product.amount">
+        <label for="type">Type:</label>
+        <input type="text" name="type" id="type" placeholder="kg" [(ngModel)]="product.type">
+        <label for="bought">Bought:</label>
+        <input type="checkbox" name="bought" id="bought" value="bought" [(ngModel)]="product.bought"><br><br>
+        <label for="description">Description:</label>
+        <textarea rows="4" cols="50" name="description" id="description" form="usrform" placeholder="Enter text here..."
+                  [(ngModel)]="product.description">
+    </textarea>
+        <br><br>
+        <div class="buttongroup">
+          <button *ngIf="mode === 'new'" (click)="onSaveClicked()">Save</button>
+          <button *ngIf="mode === 'edit'" (click)="onDeleteClicked()">Delete</button>
+          <button *ngIf="mode === 'edit'" (click)="onEditClicked()">Update</button>
+          <button (click)="onBackClicked()">Back</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div *ngIf="recipes.length>0" class="column">
+    <div class="recipeIdeas">
+      <h2>recipe ideas</h2>
+      <div>
+        <div *ngFor="let recipe of recipes" class="post-container">
+          <div class="post-thumb"><img src="{{recipe.image}}"/></div>
+          <div class="post-content">
+            <h3 class="post-title">{{recipe.label}}</h3>
+            <ul>
+              <li *ngIf="recipe.ingredients.length>0">{{recipe.ingredients[0].text}}</li>
+              <li *ngIf="recipe.ingredients.length>1">{{recipe.ingredients[1].text}}</li>
+              <li *ngIf="recipe.ingredients.length>2">{{recipe.ingredients[2].text}}...</li>
+            </ul>
+            <p class="recipeIngredients">Source: <a href="{{recipe.url}}">{{recipe.source}}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
