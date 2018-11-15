@@ -10,8 +10,8 @@ ist bereits das BackEnd, sowie Frontend und diverse (notwendige) Änderungen ent
 Die Funktionalität **Offline** zu betreiben ist leider nicht enthalten!
 
 ## Installation
+Als erstet müssen folgende Bibliotheken für das Backend, sowie Frontend installiert werden:
 ### Backend:
-Als erstet müssen folgende Bibliotheken für das Backend installieren:
 
 - npm install express --save
 - npm install json2csv
