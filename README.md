@@ -45,3 +45,16 @@ ng serve
 ```
 Anschließend kann man zur Startseite   `http://localhost:4200/` navigieren.
 
+## Funktionalitäten:
+### Listenansicht
+
+Die Einträge sind in einem Tabellenformat angezeigt und jede Spalte wurde betitelt.
+Durch drücken auf auf eine Spalte gelangt man in die Detailansicht.
+![screenshot_detail](https://i.imgur.com/72874uk.png)
+
+### Detailansicht
+![screenshot_detail](https://i.imgur.com/2XSXOnG.png)
+
+### Zusatzfeature
+Das Zusatzfeature befindet sich auf der Detailansichtsseite. Es handelt sich hierbei um eine Rezeptideen Sammlung.
+![screenshot_feature](https://i.imgur.com/Y07qQ9y.png)
