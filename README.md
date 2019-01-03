@@ -7,6 +7,7 @@ Bei diesem Projekt handelt es sich um das FrontEnd für die ersten Hausaufgabe. 
 ist bereits das BackEnd, sowie Frontend und diverse (notwendige) Änderungen enthalten!
 
 Die Funktionalität **Offline** zu betreiben ist leider nicht enthalten!
+**API KEY wurde aus Sicherheitsgründen im Backend entfernt. Neuen KEY Anfordern und Eintragen**
 
 ## Installation
 Als erstet müssen folgende Bibliotheken für das Backend, sowie Frontend installiert werden:
