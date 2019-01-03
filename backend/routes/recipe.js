@@ -17,8 +17,8 @@ async function getRecipes(req, res) {
             json: true,
             qs: {
                 q: ingredient,
-                app_id: '1b5ffbbb',
-                app_key: '0de5f4dffd5d1c95f1cf8916714cf808',
+                app_id: 'APP_ID',
+                app_key: 'API_KEY',
                 to: 5
             }
         };
