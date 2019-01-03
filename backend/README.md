@@ -1,4 +1,4 @@
-## FWE-WS18-19-747312-HA1
+## FWE_Einkaufsliste Backend
 Ziel dieser App ist es, Artikel die wir für den täglichen oder wöchentlichen Einkauf benötigen
 zu sammeln und dadurch stets den Überblick zu behalten.
 
