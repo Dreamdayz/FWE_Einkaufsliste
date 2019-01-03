@@ -1,8 +1,7 @@
 # Einkaufsliste
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
-Um genauers über das Backend zu erfahren, solltest du in der Repository [747312-ha1](https://code.fbi.h-da.de/istkeogie/fwe-ws18-19-747312-ha1)
-nachschauen. 
+
 
 Bei diesem Projekt handelt es sich um das FrontEnd für die ersten Hausaufgabe. In diesem Projekt
 ist bereits das BackEnd, sowie Frontend und diverse (notwendige) Änderungen enthalten!
